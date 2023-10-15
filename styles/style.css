@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lora:wght@600&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-family: 'Crimson Text', serif;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden
+}
+
+
+/* encabezado */
+
+
+.logoContainer {
+    background-image: url(../multimedia/21grabados_estilo_xilogr_0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.logoContainer img {
+    padding-left: 38%;
+    width: 25%;
+    height: auto;
+}
+
+/* nav */
+nav {
+    border-bottom: 2px solid whitesmoke;
+    background-color: #33353d;
+}
+
+nav div ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 15%;
+    padding: 2% 1% 2% 3%;
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* fin nav */
+main{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "portada portada portada portada" "imgPresentacion imgPresentacion contenedorPresentacion contenedorPresentacion "
+    "galeria galeria galeria galeria";
+}
+
+h1 {
+    margin: 0 0 0 20%; 
+    text-decoration: overline;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 2%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.1em;
+    padding: 2%;
+    text-decoration: overline;
+}
+
+.portada{
+    grid-area: portada;
+    grid-column-start: 1;
+    grid-column-end: 5; 
+    margin: 3%;
+}
+.portada p{
+    font-size: 1.3rem;
+    margin:4%;
+}
+.portada div video {
+    width: 80%;
+    height: 35%;
+    margin-left: 10%;
+}
+
+.contenedorPresentacion {
+    grid-area: contenedorPresentacion;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 3%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.contenedorPresentacion p{
+    margin: 6%;
+}
+.imgPresentacion{
+    grid-area: imgPresentacion;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.contenedorPresentacion video{
+    margin-left: 25%;
+}
+.imgPresentacion img{
+    width: 100%;
+    height: auto;
+}
+.galeria{
+grid-area: galeriaMenu;
+grid-column-start: 1;
+grid-column-end: 5;
+}
+.contenedorMenu, .contenedorPostres {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+    grid-template-rows: auto;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.254);
+}
+
+.galeriaMenu img, .galeriaPostres img{
+    width: 350px;
+    height: 320px;
+    margin-right: 2%;
+    border: solid 2px rgba(128, 128, 128, 0.213);
+}
+
+.galeriaPostres h3{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+}
+/* styles contacto.html */
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+
+}
+.mainContacto p, h2{
+    margin: 2%;
+}
+
+.imgContacto{
+    float: left;
+    width: 35%;
+    height: auto;
+    margin-top: 2%;
+    padding: 2%;
+}
+.desarrolloContacto{
+    border-bottom: 3px solid black;
+}
+.contenedorForm{
+    background-image: url(https://media.istockphoto.com/id/499425987/es/vector/ilustraciones-de-coffeeshop-garabato.jpg?s=1024x1024&w=is&k=20&c=MGagHB6aZ1dk4qHY1xlVHz7P0fgCg_wQ5Uk7f1-9rLM=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario {
+    margin: 20px;
+    padding: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    background-color: whitesmoke;
+    
+}
+
+.formulario h2 {
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    margin: 9px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+    border-bottom: 1px solid #d9cbcb;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    border-top: 2px solid black;
+}
+
+.footerUbicacion {
+    padding: 4% 18% 0% 5%;
+}
+
+.mapa {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 12%;
+}
+.mapa h2, h3, ul,li{
+    text-align: center;
+    list-style: none;
+}
+.mapa iframe {
+    padding-top: 10%;
+}
+
+.footerContacto {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid whitesmoke;
+    background-image: url(https://media.istockphoto.com/id/1269859789/es/vector/patr%C3%B3n-sin-costuras-gatos-negros-con-ojos-verdes-sobre-fondo-blanco-vector-eps-10.jpg?s=1024x1024&w=is&k=20&c=tax8XOoB6ebA_b7qzfoGvN7W46ho3io0xqk_wavDlj4=);background-position: center;
+    background-size: contain;
+    opacity: 0.9;
+}
+
+.footerContacto a {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.footerContacto h4 {
+    padding-top: 21%;
+    font-size: 1.2rem;
+}
+
+.footerContacto .infoContacto {
+    padding: 15%;
+    background-image: url(https://images.pexels.com/photos/818788/pexels-photo-818788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.redesPieDeNota {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 3% 0;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.redesPieDeNota a img{
+    width: 80px;
+    height: auto;
+}
+.redesPieDeNota div h4 {
+    text-align: center;
+    padding-bottom: 10%;
+    font-size: 1.7rem;
+    font-family: emoji;
+}
+
+.redesPieDeNota .pie {
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+}
